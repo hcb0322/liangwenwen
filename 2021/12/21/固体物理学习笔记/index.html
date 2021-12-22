@@ -260,19 +260,89 @@ p = kh
 <center>一个面心立方晶胞对应4个格点</center>
 
 <ul>
-<li><p>晶列、晶面指数</p>
-<ul>
+<li><h3 id="晶列、晶面指数"><a href="#晶列、晶面指数" class="headerlink" title="晶列、晶面指数"></a>晶列、晶面指数</h3><ul>
 <li>通过任意两格点作一条直线，这一直线称为晶列</li>
 </ul>
 </li>
-<li><p>倒格空间</p>
-<ul>
-<li><script type="math/tex; mode=display">
+<li><h3 id="倒格空间"><a href="#倒格空间" class="headerlink" title="倒格空间"></a>倒格空间</h3><script type="math/tex; mode=display">
 \begin{array}{c}
 \vec{b_1}=\frac{2\pi[\vec{a_2}\times\vec{a_3}]}{\Omega}\\
 \vec{b_2}=\frac{2\pi[\vec{a_3}\times\vec{a_1}]}{\Omega}\\
 \vec{b_3}=\frac{2\pi[\vec{a_1}\times\vec{a_2}]}{\Omega}\\
-\end{array}</script></li>
+\end{array}</script><ul>
+<li>正格原胞体积与倒格原胞体积之积等于 $(2\pi)^3$，即 $ \Omega^*\cdot\Omega=(2\pi)^3$ </li>
+<li>正格子与倒格子互为对方的倒格子</li>
+<li>倒格矢 $ \vec{k_h}=h_1\vec{b_1}+h_2\vec{b_2}+h_3\vec{b_3}$ 与正格子晶面族 $ (h_1h_2h_3) $ 正交</li>
+<li>倒格矢 $ \vec{k_h} $ 与晶面族 $ (h_1h_2h_3) $ 的面间距成反比<ul>
+<li>$ d_{h_1h_2h_3}=\frac{2\pi}{|\vec{k_h}|} $     $ d^*_{h_1h_2h_3} $ 是晶面族 $ (h_1h_2h_3) $ 的面间距</li>
+<li>$ d_{l_1l_2hl_3}=\frac{2\pi}{|\vec{k_{l}}|} $      $ d^*_{l_1l_2l_3} $ 是晶面族 $ (l_1l_2l_3) $ 的面间距</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h3 id="在晶胞坐标系中"><a href="#在晶胞坐标系中" class="headerlink" title="在晶胞坐标系中"></a>在晶胞坐标系中</h3><script type="math/tex; mode=display">
+\begin{eqnarray}
+\vec{a_1} & = & \frac{1}{2}(\vec{b}+\vec{c})\\
+\vec{a_2} & = & \frac{1}{2}(\vec{c}+\vec{a})\\
+\vec{a_3} & = & \frac{1}{2}(\vec{a}+\vec{b})\\
+\end{eqnarray}</script><script type="math/tex; mode=display">
+\begin{array}{c}
+d_{hkl} = \frac{2\pi}{|\vec{k_{hkl}}|} \ \ \ 
+\vec{k_{hkl}} = h\vec{a^*}+k\vec{b^*}+l\vec{c^*}\\
+\Omega = \vec{a}\cdot[\vec{b}\times\vec{c}]\\
+\vec{a^*} = \frac{2\pi[\vec{b}\times\vec{c}]}{\Omega}\ \ 
+\vec{b^*} = \frac{2\pi[\vec{c}\times\vec{a}]}{\Omega}\ \ 
+\vec{c^*} = \frac{2\pi[\vec{a}\times\vec{b}]}{\Omega}\ \ 
+\end{array}</script><ul>
+<li><p>晶格的对称性</p>
+<ul>
+<li><p>转动   <script type="math/tex">A=\begin{bmatrix}
+1&0&0\\
+0&\cos\theta&-\sin\theta\\
+0&\sin\theta&\cos\theta 
+\end{bmatrix}</script></p>
+</li>
+<li><p>中心反演<br>将任意一点 $(x,y,z)$ 变成 $(-x,-y,-z)$ 的变换称为中心反演</p>
+<script type="math/tex; mode=display">A=\begin{bmatrix}
+-1&0&0\\
+0&-1&0\\
+0&0&-1
+\end{bmatrix}</script></li>
+<li><p>镜像（镜面）<br>以 $x=0$ 的平面为镜面，将任意一点 $(x,y,z)$ 变成 $(-x,y,z)$ ，这一变换称为镜像变换</p>
+<script type="math/tex; mode=display">A=\begin{bmatrix}
+-1&0&0\\
+0&1&0\\
+0&0&1
+\end{bmatrix}</script><blockquote>
+<p>以上三种变换都是正交变换</p>
+</blockquote>
+</li>
+<li><p>$n$ 度旋转对称轴<br>晶体绕某一对称轴旋转 $\theta=\frac{2\pi}{n}$ 以后自身能重合，则称该州为 $n$ 度旋转对称轴（ $n$ 可取 $1,2,3,4,6$ )</p>
+</li>
+<li><p>$n$ 度旋转对反演轴</p>
+<ul>
+<li>$\bar{1}$ ：中心反演，常用符号 $i$ 表示</li>
+<li>$\bar{2}$ ：完全等价于垂直于该轴的镜像操作，记作 $m$</li>
+<li>$\bar{3}$ ：不是基本的对称操作</li>
+<li>$\bar{4}$ ：4度旋转-反演操作 是基本对称操作</li>
+<li>$\bar{6}$ ：不是基本对称操作</li>
+</ul>
+<blockquote>
+<p>八种基本对称操作：$1,2,3,4,6,i,m,\bar{4}$</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>晶体的 $X$ 光衍射</p>
+</li>
+<li><p>原子散射因子、几何结构因子</p>
+<ul>
+<li>定义：<br>原子内所有电子在某一方向上引起的散射波的政府的几何和，与某一电子在该方向上引起的散射波的振幅之比称为该原子的散射因子。</li>
+<li>总振幅：<br>$\tilde{A}=A\int e^{i\frac{\pi}{\lambda}\vec{s}\cdot\vec{r}}\rho(\vec{r})d\tau$          $\rho(\vec{r})$ 是电子在 $P$ 点的几率密度<br>$f(\vec{s})=\frac{\tilde A}{A}=\int e^{i\frac{\pi}{\lambda}\vec{s}\cdot\vec{r}}\rho(\vec{r})d\tau$ </li>
+<li>$\vec{s}=\vec{S}-\vec{S_0}$ ，$\vec{S_0}$ 一定，$\vec{\sigma}$ 只依赖于散射方向 $\vec{S}$ ，因此，散射因子是散射方向的函数。</li>
+<li></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
