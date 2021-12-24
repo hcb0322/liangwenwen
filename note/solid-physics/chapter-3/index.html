@@ -119,7 +119,7 @@
             <section class="inner">
                 <section class="inner-main">
                     <div class="post">
-    <article id="post-ckxhsqz0n0013dstnbexe87ei" class="article article-type-post" itemscope
+    <article id="post-ckxiy96sy000a8ktnfyh02goc" class="article article-type-post" itemscope
     itemprop="blogPost">
 
     <div class="article-inner">
@@ -165,7 +165,98 @@
         </div>
 
         <div class="article-entry post-inner-html hairline" itemprop="articleBody">
-            <h2 id="第三章-XXXXX"><a href="#第三章-XXXXX" class="headerlink" title="第三章 XXXXX"></a><strong>第三章 XXXXX</strong></h2><h2 id="上一篇-《固体物理》学习笔记-第二章"><a href="#上一篇-《固体物理》学习笔记-第二章" class="headerlink" title="上一篇 《固体物理》学习笔记 第二章"></a>上一篇 <a href="/note/solid-physics/chapter-2/">《固体物理》学习笔记 第二章</a></h2><h2 id="下一篇-《固体物理》学习笔记-第四章"><a href="#下一篇-《固体物理》学习笔记-第四章" class="headerlink" title="下一篇 《固体物理》学习笔记 第四章"></a>下一篇 <a href="/note/solid-physics/chapter-4/">《固体物理》学习笔记 第四章</a></h2><!-- flag of hidden posts -->
+            <h2 id="第三章-晶格振动与晶体热血性质"><a href="#第三章-晶格振动与晶体热血性质" class="headerlink" title="第三章 晶格振动与晶体热血性质"></a><strong>第三章 晶格振动与晶体热血性质</strong></h2><h3 id="一维晶格振动"><a href="#一维晶格振动" class="headerlink" title="一维晶格振动"></a><strong>一维晶格振动</strong></h3><h4 id="一维简单格子"><a href="#一维简单格子" class="headerlink" title="一维简单格子"></a>一维简单格子</h4><ul>
+<li><p>两原子间的相互作用力 $f=-\frac{du}{dr}$ </p>
+</li>
+<li><p>第 $n$ 个原子与第 $n+1$ 个原子的相互作用力<br>$f=-\beta(u_{n+1}-u_n)\ \ \ \beta=\frac{d^2u}{dr^2}$ </p>
+</li>
+<li><p>称 $\beta$ 为弹性恢复力系数，称忽略掉互作用力中非线性项的近似为简谐近似</p>
+</li>
+<li><p>玻恩和卡门提出一个假象的边界条件，即周期性边界条件</p>
+</li>
+<li><p>在玻恩-卡门条件下 </p>
+<script type="math/tex; mode=display">
+{\small \begin{align*}
+u_n &=Ae^{i(qna-wt)} & &A\ 为振幅\\
+u_{n+1} &=Ae^{i(qna+qn-wt)} & &w\ 为圆频率\\
+u_{n-1} &=u_ne^{-iqn} &
+\end{align*}}</script><p>$qna$ 是第 $n$ 个原子在 $t=0$ 时刻的振动位相</p>
+</li>
+<li><p>第 $n$ 个原子的运动方程为</p>
+<script type="math/tex; mode=display">
+{\small \begin{align}
+m\frac{d^2u_n}{dt^2} & = \beta(u_{n+1}-u_{n-1}+u_n)\\
+-mw^u_n & = \beta(u_ne^{iqa}+u_ne^{-iqa}-2u_n)\\
+-mw^2 & = \beta(u_ne^{iqa}+u_ne^{-iqa}-2)\\
+w^2 & = \frac{2\beta}{m}(1-\cos{qa})=\frac{4\beta}{m}\sin^2\frac{qa}{2}\\
+w & = 2\sqrt{\frac{\beta}{m}}|\sin\frac{qa}{2}|
+\end{align}}</script></li>
+<li>第 $n$ 个原子受的力为<script type="math/tex; mode=display">
+{\scriptsize \beta(u_{n+1}-u_n)-\beta(u_n-u_{n-1})=\beta(u_{n+1}+u_{n-1}-2u_n)}</script></li>
+<li><p>上式中 $qa$ 增加 $2\pi$ 的整数倍，即波矢 $q$ 增加倒格矢 $\frac{2\pi}{a}$ 的整数倍，频率 $w$ 没有任何变化，这说明格波的频率在波矢空间内是以倒格矢 $\frac{2\pi}{a}$ 为周期的周期函数；当 $q$ 换成 $-q$ 时，频率 $w$ 没有变化，说明格波频率 $w$ 在波矢空间内具有反演对称性。</p>
+</li>
+<li><p>$qa$ 可限制在如下范围内</p>
+<script type="math/tex; mode=display">
+-\frac{\pi}{a}<q\le\frac{\pi}{a}</script></li>
+<li><p>设格波传播速度为 $v$ ，由 $v=\frac{w}{q}$ 得</p>
+<script type="math/tex; mode=display">
+v=\frac{\lambda}{\pi}(\frac{\beta}{m})^\frac{1}{2}|\sin\frac{\pi a}{A}|</script><p>通常称 $w$ 与 $q$ 的关系为色散关系，也称振动频谱或振动谱。</p>
+</li>
+<li><p>周期性边界条件：</p>
+<script type="math/tex; mode=display">
+{\small u_{n+N}=Ae^{i[q(n+N)a-wt}=u_n=Ae^{i(qan-wt)}}</script><center>$e^{iqNa}=1$ 即 $q=\frac{2\pi l}{Na}$</center>
+
+<center>$l$ 为整数，$-\frac{N}{2}&lt;l\le\frac{N}{2}$ </center>
+
+<p>一维简单晶格波矢密度为 $\frac{Na}{2\pi}$ 或 $\frac{L}{2\pi}$<br>$L=Na$ 为一维简单晶格的总长度）</p>
+</li>
+<li>当 $q\to 0$ 时，长波近似 $v=a(\frac{\pi}{m})^\frac{1}{2}$ ，且有 $u{n-1}=u_n=u_{n+1}$ ，即某一原子周围多干原子都以相同的振幅和位相作振动。</li>
+<li>当 $q=\pm\frac{\pi}{a}$ 时，$w_{max}=2(\frac{\beta}{m})^\frac{1}{2}$ ，此时 $-u_{n-1}=u_n=-u_{n+1}$ ，即相邻原子以相同的振幅作相对运动。</li>
+</ul>
+<h4 id="一维复式格子"><a href="#一维复式格子" class="headerlink" title="一维复式格子"></a>一维复式格子</h4><ul>
+<li><p>若只考虑最近邻原子的相互作用：</p>
+<script type="math/tex; mode=display">
+{\scriptsize \begin{align}
+M\frac{d^2u_{2n}}{dt^2} & = \beta_1(u_{2n+1}-u_{2n})-\beta_2(u_{2n}-u_{2n-1})\\
+m\frac{d^2u_{2n+1}}{dt^2} & = \beta_2(u_{2n+2}-u_{2n+1})-\beta_1(u_{2n+1}-u_{2n})\\
+u_{2n} & = Ae^{i(qna-wt)}\\
+u_{2n+1} & = Be^{i(qna-wt)}
+\end{align}}</script><p>解得：</p>
+<script type="math/tex; mode=display">
+{\scriptsize w^2=\frac{\beta_1+\beta_2}{2mw}
+\{(m+M)^2-\frac{16m\beta_1\beta_2M}{(\beta_1+\beta_2)^2}
+\sin^2(\frac{qa}{2})^\frac{1}{2}\}}</script></li>
+<li><p>复式晶格振动频率在波矢空间内仍具有周期性 $[w(q+\frac{2\pi}{a})=w(q)]$ 和反演对称性。</p>
+</li>
+<li><p>由玻恩-卡门边界条件得：<br>$qNa=2\pi l \ \ -\frac{N}{2}&lt;l\le\frac{N}{2}$   （二维简单晶格波矢密度 $\frac{S}{2\pi^2}$ ）<br>即晶格振动的波矢数目等于晶体的原胞数目。</p>
+</li>
+<li><p>当波矢 $q\to 0$ 时，$w_A=a\sqrt{\frac{\beta_1\beta_2}{(m+M)(\beta_1+\beta_2)}}q$<br>$w_A$ 一支的格波为声学波<br>$w_O$ 一支的格波为光学波</p>
+</li>
+<li><p>长声学波描述的时原胞的刚性运动，代表了原胞质心的运动。</p>
+</li>
+<li><p>长光学波时保持原胞质心不动的一种振动模式。</p>
+</li>
+</ul>
+<h3 id="三维晶格的振动"><a href="#三维晶格的振动" class="headerlink" title="三维晶格的振动"></a>三维晶格的振动</h3><ul>
+<li>声学波有 $3$ 支，三维晶格的波矢密度为 $\frac{V_c}{(2\pi)^3}$ ，光学波有 $3n-3$ 支</li>
+</ul>
+<h3 id="简正振动、声子"><a href="#简正振动、声子" class="headerlink" title="简正振动、声子"></a>简正振动、声子</h3><h4 id="晶格振动能、声子"><a href="#晶格振动能、声子" class="headerlink" title="晶格振动能、声子"></a>晶格振动能、声子</h4><ul>
+<li>频率为 $w_i$ 的谐振子的振动能为：$\varepsilon_i=(n_i+\frac{1}{2})\hbar w_i$ </li>
+<li>晶格振动能：$\underset{i=1}{\overset{3N}{\sum}}(n_i+\frac{1}{2}\hbar w_i) \ \ n_i=0,1,2 \ …$</li>
+<li>晶格的振动能时量子化的，能量的增减是以 $\hbar w$ 为计量，赋予 $\hbar w$ 一个假想的携带者——声子，即声子是一个晶格振动的能量的量子<ul>
+<li>声子是准粒子，$\hbar q$ 为声子的准动量。</li>
+<li>声子不携带物理动量</li>
+<li>声子的另一个性质是声子的等价性</li>
+</ul>
+</li>
+<li>晶体的振动能高取决于：<ul>
+<li>声子数目多</li>
+<li>能量大的声子数目多</li>
+</ul>
+</li>
+<li>平均声子数目（利用玻尔兹曼统计理论）$n(w)=\frac{1}{e^{\frac{\hbar w}{k_bT}}-1}$<br>当 $T=0K$ 时，$n(w)=0$，即 $T&gt;0K$</li>
+</ul>
+<h4 id="晶格振动能、声子-1"><a href="#晶格振动能、声子-1" class="headerlink" title="晶格振动能、声子"></a>晶格振动能、声子</h4><h2 id="上一篇-《固体物理》学习笔记-第二章"><a href="#上一篇-《固体物理》学习笔记-第二章" class="headerlink" title="上一篇 《固体物理》学习笔记 第二章"></a>上一篇 <a href="/note/solid-physics/chapter-2/">《固体物理》学习笔记 第二章</a></h2><h2 id="下一篇-《固体物理》学习笔记-第四章"><a href="#下一篇-《固体物理》学习笔记-第四章" class="headerlink" title="下一篇 《固体物理》学习笔记 第四章"></a>下一篇 <a href="/note/solid-physics/chapter-4/">《固体物理》学习笔记 第四章</a></h2><!-- flag of hidden posts -->
         </div>
 
     </div>
@@ -348,7 +439,7 @@
 <!--https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML-->
 <!--https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=AM_HTMLorMML-full-->
 <!---->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="https://cdnjs-five.vercel.app/MathJax-2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 
 </html>
